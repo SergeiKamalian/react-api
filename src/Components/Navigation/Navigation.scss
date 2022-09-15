@@ -1,0 +1,36 @@
+.Navigation {
+    width: 80%;
+    height: 70px;
+    background: #3A82EE;
+    margin: 0 auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px #8dbaff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    >.logo {
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+    >ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        cursor: pointer;
+        >li {
+            color: white;
+            border: 1px solid #3A82EE;
+            transition: all .5s ;
+        }
+        >li:hover {
+            border-bottom: 1px solid white;
+        }
+    }
+}
